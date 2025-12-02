@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol PaywallStatable: AnyObject {
+    var paywallOptions: PaywallOptions { get }
+    var priceDisplayState: PriceDisplayState { get }
+}
